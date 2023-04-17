@@ -138,7 +138,7 @@ a {
     margin-left: 15px;
   }
   .navigation {
-    gap: 70px;
+    gap: 0px;
   }
   .nav {
     gap: 50px;
@@ -876,6 +876,7 @@ a {
   text-transform: uppercase;
   padding-bottom: 10px;
   padding-left: 75px;
+  color: #ffffff;
 }
 
 .subscription_input {
