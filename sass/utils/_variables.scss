@@ -1,0 +1,29 @@
+    
+    $primary-black-color: #212121;
+    $primary-text-color: #757575;
+    $primary-white-color: #ffffff;
+    $accent-color: #2196f3;
+    $accent-color-hover: #188ce8;
+    $background-black: #21303a;
+    $text-white-opacity: #ffffff99;
+    $button-primary-hover: #188ce8;
+    $container-padding: calc((100% - 1200px) / 2);
+
+    $background-black-1: #21303a;
+    $background-black-2: #2f303A;
+
+    $gray-1: #f5f4fa;
+    $gray-2: #afb1b8;
+    $black-1: #000000;
+
+    $background-black-240Perc: hsla(235, 10%, 21%, 0.4);
+    $primary-white-60Perc: hsla(0, 0%, 100%, 0.6);
+    $primary-white-10Perc: hsla(0, 0%, 100%, 0.1);
+
+    // Crear fuunciones con estilos y llamarlo con include en la clase de los componentes.
+    @mixin display(){
+        display: flex;
+        list-style: none;
+        gap: 80px;
+    }
+

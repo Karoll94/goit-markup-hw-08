@@ -1,0 +1,187 @@
+// Importación de las variables
+@import '../utils/variables';
+
+
+  /* Sección del pie de página */
+
+  .footer {
+    height: 400px;
+    background-color: $background-black-2;
+  }
+  
+  .page-footer__logo {
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 0px 0px 50px 50px;
+    
+    
+  }
+  
+  .container-footer {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 200px;
+    padding-left: 100px;
+    
+  }
+  
+  .contacts-footer {
+    list-style: none;
+    margin-top: 20px;
+    &__link {
+      display: block;
+      color: $gray-2;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      text-decoration: none;
+      padding: 5px 0;
+      
+
+    }
+    &__link:hover {
+      color: $primary-white-color;
+    }
+  }
+  
+  .find-us{
+    &__title {
+      color: $primary-white-color;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      margin-left: 26%;
+    }
+  }
+  
+  
+  .find-us-social-media {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    margin-left: 10%;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $primary-white-10Perc;
+      border-radius: 25px;
+      box-shadow: hsla(0, 0%, 0%, 0.479) 0 3px 5px;
+      cursor: pointer;
+      height: 44px;
+      width: 44px;
+    }
+    &__icon {
+      fill: $primary-white-color;
+    }
+    &__item:hover {
+      background-color: $accent-color;
+    }
+    &__link:focus {
+      background-color: $accent-color;
+    } 
+  }
+  
+  
+  @media only screen and (min-width: 767.98px) and (max-width:1199.98px){
+   
+    .page-footer__logo {
+      font-size: 24px;
+      padding-left: 75px;   
+    }
+    
+    .container-footer{
+      flex-wrap: wrap;
+      margin-top: -50px;
+     
+    }
+    
+    .contacts-footer {
+      list-style: none;
+      &__link {
+        display: block;
+        color: $gray-2;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration: none;
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+      }
+    }
+    .find-us{
+      &__title {
+       padding-left: 20px;
+      }
+    }
+.subscription-form{
+  margin-left: 80px;
+  margin-top: 5px;
+}
+.container-button-footer{
+  margin-top: 75px;
+  margin-left: -225px;
+}
+  
+}
+  @media only screen and (min-width: 479.98px) and (max-width:767.97px){
+    
+  .footer {
+    height: 650px;
+    width: 1125px;
+  }
+    .page-footer__logo {
+      font-size: 36px;
+      padding-left: 36px;  
+    }
+    
+    .container-footer{
+      flex-direction: column;
+      margin-top: -50px;
+      height: 500px;
+      width: 1125px;
+      align-items: center;
+      margin-left: -90px;
+     
+    }
+    
+    .contacts-footer {
+      list-style: none;
+      &__link {
+        display: block;
+        color: $gray-2;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        text-decoration: none;
+        padding: 5px 0px 0px 0px;
+        text-align: center;
+      }
+    }
+    .find-us{
+      &__title {
+       padding-left: 20px;
+       margin-top: 60px;
+      }
+    }
+  .subscription-form{
+    margin-left: 0px;
+    margin-top: 60px;
+  }
+  .container-button-footer{
+    margin-top: 75px;
+    margin-left: -225px;
+}
+  
+  }

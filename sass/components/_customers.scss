@@ -1,0 +1,75 @@
+// importar las variables
+@import '../utils/variables';
+
+/* Seccion de clientes regulares */
+.regular-customers{
+  &__title{
+    color: $primary-black-color;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 40px;
+    }
+    &__customer{
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      border: solid 1px $gray-2;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 90px;
+      width: 170px;
+      }
+}
+
+.regular-customers__item:hover {
+background-color: $accent-color;
+}
+
+.regular-customers__link:focus {
+background-color: $accent-color;
+}
+
+
+@media only screen and (min-width: 767.98px) and (max-width:1199.98px){
+  .regular-customers{
+    &__title{
+      font-size: 28px;
+      }
+      &__customer{
+        flex-wrap: wrap;
+        padding: 15px;
+      }
+      &__item {
+        height: 90px;
+        width: 220px;
+        margin-bottom: 30px;
+        }
+  }
+}
+
+@media only screen and (min-width: 479.98px) and (max-width:767.97px){
+  .regular-customers{
+    width: 1125px;
+    height: 1000px;
+      &__customer{
+        flex-wrap: wrap;
+        padding: 15px;
+        justify-content: space-around;
+      }
+      &__item {
+        height: 200px;
+        width: 500px;
+        margin-bottom: 30px;
+        }
+  }
+  
+}
+

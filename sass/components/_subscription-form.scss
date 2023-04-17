@@ -1,0 +1,72 @@
+@import '../utils/variables';
+
+
+/* Formulario suscripción al boletín */
+.container_subscription{
+    position: relative;
+    padding-left: 300px;
+  }
+  
+  .subscription-form__title {
+    /* position: absolute; */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-left: 75px;
+  }
+  
+  .subscription_input{
+    position:absolute;
+    width: 270px;
+    height: 50px;
+    left: 75px;
+    top: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 10px;
+    background: $background-black-2;
+  }
+  
+  .container-button-footer{
+    position: relative;
+  }
+  
+  .btn-subscription-footer{
+    position: absolute;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8em;
+    width: 170px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 5px 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    right: 100px;
+    left: 350px;
+    text-align: justify;
+  }
+  
+  .subscription_svg_send{
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 467px;
+    top: 17px;
+    bottom: 10px;
+    fill: $primary-white-color;
+  }
+  
+  .btn-subscription-footer:hover, .btn-subscription-footer:focus{
+    background-color: $accent-color-hover;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  

@@ -1,0 +1,227 @@
+// importar las variables 
+@import '../utils/variables';
+
+/* Sección del Hero */
+.hero {
+    // background-image: 
+    // linear-gradient(
+    //   rgba(0, 0, 0, 0.5),
+    //   rgba(0, 0, 0, 0.5)
+    // ),
+    // url("../images/img_hero.jpg");
+    // padding: 214px;
+    // text-align: center; 
+    // margin: auto; 
+    // max-width: 1600px;
+    padding: 214px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(310deg, #0000005d, #2f303a94),
+    url("../images/img_hero.jpg");
+    background-size: 100% 600px;
+    &__title {
+      color: $primary-white-color;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.3em;
+      text-transform: capitalize;   
+      padding: 0 20%;
+      margin-bottom: 40px;
+  }
+  &__button {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8em;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+  }
+  &__button:hover {
+    background-color: $accent-color-hover;
+  }
+}
+
+/* Modal */
+.backdrop{
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: 2;
+  transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  /* display: none; */
+}
+
+.modal {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 600px;
+  left: 50%;
+  top: 3%;
+  transform: translateX(-50%);
+  z-index: 3;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  &__button {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 465px;
+    top: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+  }
+  &__button:hover{
+    color: $accent-color-hover;
+  }
+  &__text{
+    padding: 30px 0px;
+    color: $primary-black-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
+
+/* Formulario del modal */
+.modal-label__label{
+  text-align: left;
+  padding-left: 32px;
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+}
+
+.input-container{
+  position: relative;
+  padding: 10px 30px;
+  &__input {
+    display: block;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+  }
+  &__svg{
+    /* overflow: hidden; */
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 50px;
+    top: 20px;
+    bottom: 10px;
+    fill: $primary-black-color;
+  }
+}
+
+
+.input-container__input:hover + .input-container__svg,
+.input-container__input:focus + .input-container__svg{
+  fill: $accent-color-hover;    
+}
+
+.input-container__input:hover, .input-container__input:focus {
+  border: 1px solid $accent-color-hover;
+}
+
+.terms-conditions-container{
+position: relative;
+padding: 25px 45px;
+&__label{
+  text-align: left;
+  padding-left: 32px;
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  }
+}
+
+
+.button-modal-submit {
+  background-color: $accent-color;
+  color: $primary-white-color;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8em;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 5px 20px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-modal-submit:focus, .button-modal-submit:hover  {
+background-color: $accent-color-hover;
+}
+
+
+
+
+@media only screen and (min-width: 767.98px) and (max-width:1199.98px){
+  .hero{
+    height: 400px;
+    background-size: 100% 400px;
+    padding: 20px;
+    &__title {
+      color: $primary-white-color;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.6em;
+      padding: 80px 30% 0px 30%;
+      margin-bottom: 40px;
+  }
+  &__button {
+    padding: 10px 20px;
+  }
+  }
+}
+@media only screen and (min-width: 479.98px) and (max-width:767.97px){
+  .hero{
+    height: 500px;
+    width: 1125px;
+    background-size: 100% 400px;
+    padding: 20px;
+    &__title {
+      color: $primary-white-color;
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.6em;
+      padding: 80px 30% 0px 30%;
+      margin-bottom: 40px;
+      
+  }
+  &__button {
+    padding: 10px 20px;
+  }
+  }
+}

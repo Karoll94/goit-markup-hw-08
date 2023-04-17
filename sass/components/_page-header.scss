@@ -1,0 +1,132 @@
+// importaciòn de las variables
+@import '../utils/variables';
+/* Sección del encabezado */
+.page-header {
+    height: 80px;
+    padding: 30px;
+  }
+  
+  /* Contenedor del encabezado */
+  .container__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  
+/* Barra de navegación */
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  /* Logo */
+  .page-header__logo {
+    color: $accent-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  
+  /* pseudo-elemento after */
+  .nav__link.current::after{
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-image: url(../images/activable.jpg);
+  }
+  
+  .nav__link.current:hover::after{
+    display: block;
+  }
+  
+  /* Contenedor de la barra de navegación */
+  /* Estilos de los items de la barra de navegación */
+  .nav {
+    @include display();
+    &__link {
+      color: $primary-black-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
+   
+  
+  /*Contactos de la barra de navegación */
+  .contacts-header {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    &__link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $primary-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      height: 20px;
+    }
+    &__icon-email{
+      fill: $primary-text-color;
+      width: 20px;
+      height: 12px;
+    }
+    &__icon-smartphone{
+      fill: $primary-text-color;
+      width: 10px;
+      height: 17px;
+    }
+  }
+  
+
+  .nav__link:hover,
+  .nav__link:focus,
+  .nav__link.current,
+  .contacts-header__link:hover,
+  .contacts-header__link:focus,
+  .contacts-header__icon-email:hover,
+  .contacts-header__icon-smartphone:hover,
+  .contacts-header__icon-email:focus,
+  .contacts-header__icon-smartphone:focus{
+      color: $accent-color;
+      fill: #03a9f4;
+  }
+  
+
+  @media only screen and (min-width: 767.98px) and (max-width:1199.98px){
+    .page-header__logo{
+      margin-left: 15px;
+    }
+    .navigation {
+      gap: 70px;
+    }
+    .nav {
+      gap: 50px;
+    }
+    .contacts-header {
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 0px;
+      padding-right: 15px;
+    }
+
+  }
+
+
+  @media only screen and (min-width: 479.98px) and (max-width:767.97px){
+    .nav__item, .contacts-header{
+      display: none;
+    }
+    
+  }
