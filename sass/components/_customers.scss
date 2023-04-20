@@ -28,15 +28,16 @@
       width: 170px;
       }
 }
-
-.regular-customers__item:hover {
-background-color: $accent-color;
+.regular-customers__item:hover{
+  border-color: $accent-color;
+  fill: #03a9f4;
 }
 
-.regular-customers__link:focus {
-background-color: $accent-color;
-}
 
+.regular-customers__link:hover .icon-customer{
+  color: $accent-color;
+  fill: #03a9f4;
+}
 
 @media only screen and (min-width: 767.98px) and (max-width:1199.98px){
   .regular-customers{

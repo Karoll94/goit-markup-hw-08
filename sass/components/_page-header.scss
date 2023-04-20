@@ -38,6 +38,7 @@
     width: 48px;
     height: 4px;
     background-image: url(../images/activable.jpg);
+    margin-top: 40px;
   }
   
   .nav__link.current:hover::after{
@@ -90,17 +91,38 @@
   }
   
 
-  .nav__link:hover,
-  .nav__link:focus,
-  .nav__link.current,
+  // .nav__link:hover,
+  // .nav__link:focus,
+  // .nav__link.current,
+  // .contacts-header__link:hover,
+  // .contacts-header__link:focus,
+  // .contacts-header__icon-email:hover,
+  // .contacts-header__icon-smartphone:hover,
+  // .contacts-header__icon-email:focus,
+  // .contacts-header__icon-smartphone:focus
+  // {
+  //     color: $accent-color;
+  //     fill: #03a9f4;
+  // }
+  
+  .nav__link.current:hover,
   .contacts-header__link:hover,
-  .contacts-header__link:focus,
-  .contacts-header__icon-email:hover,
-  .contacts-header__icon-smartphone:hover,
-  .contacts-header__icon-email:focus,
-  .contacts-header__icon-smartphone:focus{
-      color: $accent-color;
-      fill: #03a9f4;
+  .contacts-header__link:focus{
+    color: $accent-color;
+    fill: #03a9f4;
+  }
+  .contacts-header__link:hover .contacts-header__icon-email,
+  .contacts-header__link:focus .contacts-header__icon-email,
+  .contacts-header__link:hover .contacts-header__icon-smartphone,
+  .contacts-header__link:focus .contacts-header__icon-smartphone
+  {
+    color: $accent-color;
+     fill: #03a9f4;
+  }
+
+  .modal_svg_checked{
+    width: 20px;
+    height: 20px;
   }
   
 

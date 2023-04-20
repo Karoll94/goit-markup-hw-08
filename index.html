@@ -30,7 +30,7 @@
           </li>
 
           <li class="nav__item">
-            <a class="nav__link" href="portfolio.html">Portafolio</a>
+            <a class="nav__link " href="portfolio.html">Portafolio</a>
           </li>
 
           <li class="nav__item">
@@ -41,7 +41,8 @@
       </nav>
       <!-- Contactos -->
       <ul class="contacts-header">
-
+        
+        <div class="hover_icon">
         <li class="contacts-header__item">
           <a class="contacts-header__link" href="#">
             <svg class="contacts-header__icon-email icon">
@@ -50,6 +51,7 @@
             info@devstudio.com
           </a>
         </li>
+      </div>
 
         <li class="contacts-header__item">
           <a class="contacts-header__link" href="#">
@@ -165,7 +167,7 @@
               <label class="modal-label">
                 <p class="modal-label__label">Nombre</p>
                 <div class="input-container">
-                  <input
+                  <input required
                     class="input-container__input"
                     type="text"
                     name="username"
@@ -192,7 +194,10 @@
               <label class="modal-label">
                 <p class="modal-label__label">E-mail</p>
                 <div class="input-container">
-                  <input class="input-container__input" type="email" name="email" />
+                  <input required
+                  class="input-container__input" 
+                  type="email" 
+                  name="email" />
                   <svg class="input-container__svg">
                     <use href="images/SVG/icons.svg#icon-mail.modal"></use>
                   </svg>
@@ -212,9 +217,12 @@
                 </div>
               </label>
               <div class="terms-conditions-container">
-                <!-- <svg class="modal_svg_checked">
-                  <use href="images/SVG/icons.svg#icon-checked-modal"></use>
-                </svg> -->
+                <div class = "terms-conditions-container__checkbox">
+                <input required
+                    type="checkbox" 
+                    name="cb-tyc" 
+                    value="tyc"><br>
+                </div>
                 
                 <p class="terms-conditions-container__label">
                   Estoy de acuerdo con el boletín informativo y acepto los
@@ -523,8 +531,6 @@
               </a>
             </li>
 
-
-
             <li class="regular-customers__item">
               <a class="regular-customers__link"  href="#">
                 <svg class="icon-customer company" width="63" height="46">
@@ -620,12 +626,15 @@
                   SUSCRÍBASE AL BOLETÍN INFORMATIVO
                 </p>
                 <label>
+                  
                   <div class="container_subscription">
-                  <input class="subscription_input"
+                  <input required
+                    class="subscription_input"
                     type="email"
                     name="email"
                     placeholder="Correo electrónico"
                   />
+
                   </div>
                 </label>
                 <div class="container-button-footer">

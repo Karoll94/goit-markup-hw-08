@@ -68,6 +68,7 @@ a {
   width: 48px;
   height: 4px;
   background-image: url(../images/activable.jpg);
+  margin-top: 40px;
 }
 
 .nav__link.current:hover::after {
@@ -120,17 +121,24 @@ a {
   height: 17px;
 }
 
-.nav__link:hover,
-.nav__link:focus,
-.nav__link.current,
+.nav__link.current:hover,
 .contacts-header__link:hover,
-.contacts-header__link:focus,
-.contacts-header__icon-email:hover,
-.contacts-header__icon-smartphone:hover,
-.contacts-header__icon-email:focus,
-.contacts-header__icon-smartphone:focus {
+.contacts-header__link:focus {
   color: #2196f3;
   fill: #03a9f4;
+}
+
+.contacts-header__link:hover .contacts-header__icon-email,
+.contacts-header__link:focus .contacts-header__icon-email,
+.contacts-header__link:hover .contacts-header__icon-smartphone,
+.contacts-header__link:focus .contacts-header__icon-smartphone {
+  color: #2196f3;
+  fill: #03a9f4;
+}
+
+.modal_svg_checked {
+  width: 20px;
+  height: 20px;
 }
 
 @media only screen and (min-width: 767.98px) and (max-width: 1199.98px) {
@@ -290,16 +298,20 @@ a {
 }
 
 .terms-conditions-container {
+  display: flex;
   position: relative;
   padding: 25px 45px;
 }
 .terms-conditions-container__label {
   text-align: left;
-  padding-left: 32px;
+  padding-left: 20px;
   color: #757575;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.03em;
+}
+.terms-conditions-container__checkbox {
+  margin-top: 5px;
 }
 
 .button-modal-submit {
@@ -665,11 +677,13 @@ a {
 }
 
 .regular-customers__item:hover {
-  background-color: #2196f3;
+  border-color: #2196f3;
+  fill: #03a9f4;
 }
 
-.regular-customers__link:focus {
-  background-color: #2196f3;
+.regular-customers__link:hover .icon-customer {
+  color: #2196f3;
+  fill: #03a9f4;
 }
 
 @media only screen and (min-width: 767.98px) and (max-width: 1199.98px) {
@@ -890,6 +904,7 @@ a {
   border-radius: 4px;
   padding-left: 10px;
   background: #2f303A;
+  color: #ffffff;
 }
 
 .container-button-footer {

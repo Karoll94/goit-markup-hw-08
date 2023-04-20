@@ -16,31 +16,29 @@
   </head>
   <body>
     <!-- Encabezado -->
+
     <header class="page-header">
-      <div class="container">
+      <div class="container__header">
         <!-- Barra de navegación -->
         <nav class="navigation">
           <!-- Logo -->
           <a class="logo page-header__logo" href="./index.html">WebStudio</a>
           <ul class="nav list">
-
             <li class="nav__item">
-              <a class="nav__link current" href="index.html">Estudio</a>
+              <a class="nav__link" href="index.html">Estudio</a>
             </li>
 
             <li class="nav__item">
-              <a class="nav__link" href="portfolio.html">Portafolio</a>
+              <a class="nav__link current" href="portfolio.html">Portafolio</a>
             </li>
 
             <li class="nav__item">
               <a class="nav__link" href="">Contactos</a>
             </li>
-
           </ul>
         </nav>
         <!-- Contactos -->
         <ul class="contacts-header">
-
           <li class="contacts-header__item">
             <a class="contacts-header__link" href="#">
               <svg class="contacts-header__icon-email icon">
@@ -58,7 +56,6 @@
               +52 55 55296000</a
             >
           </li>
-
         </ul>
       </div>
     </header>
@@ -70,13 +67,17 @@
           <!-- Botones de búsqueda -->
           <ul class="menu-portfolio">
             <li>
-              <button class="button-portfolio current" type="button">Todo</button>
+              <button class="button-portfolio current" type="button">
+                Todo
+              </button>
             </li>
             <li>
               <button class="button-portfolio" type="button">Sitios-web</button>
             </li>
             <li>
-              <button class="button-portfolio" type="button">Aplicaciones</button>
+              <button class="button-portfolio" type="button">
+                Aplicaciones
+              </button>
             </li>
             <li>
               <button class="button-portfolio" type="button">Diseño</button>
@@ -321,97 +322,100 @@
       </section>
     </main>
 
-   <!-- Pie de página -->
-   <footer class="footer">
-    <section class="page-footer">
-      <div class="container">
-        <!-- Logo -->
-        <a class="logo" href="">WebStudio</a>
-        <address>
-          <ul class="contacts-footer">
-            <li class="contacts-footer__item">
-              <a
-                class="contacts-footer__link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Calz. Ticomán 500, Ciudad de <br />
-                México, CDMX, México
-              </a>
-            </li>
-            <li class="contacts-footer__item">
-              <a class="contacts-footer__link" href="mailto:info@exmaple.com"
-                >info@exmaple.com</a
-              >
-            </li>
-            <li class="contacts-footer__item">
-              <a class="contacts-footer__link" href="tel:+525555296000">+52 55 5529 6000</a>
-            </li>
-          </ul>
-        </address>
+    <!-- Pie de página -->
+    <footer class="footer">
+      <section class="page-footer">
+        <div class="container-footer">
+          <!-- Logo -->
+          
+          <!-- <a class="page-footer__logo" href="">WebStudio</a> -->
+          <address>
+            <a class="page-footer__logo" href="">WebStudio</a>
+            <ul class="contacts-footer">
+              <li class="contacts-footer__item">
+                <a
+                  class="contacts-footer__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Calz. Ticomán 500, Ciudad de <br />
+                  México, CDMX, México
+                </a>
+              </li>
+              <li class="contacts-footer__item">
+                <a class="contacts-footer__link" href="mailto:info@exmaple.com"
+                  >info@exmaple.com</a
+                >
+              </li>
+              <li class="contacts-footer__item">
+                <a class="contacts-footer__link" href="tel:+525555296000">+52 55 5529 6000</a>
+              </li>
+            </ul>
+          </address>
 
-        <aside class="find-us">
-          <p class="find-us__title">Encuentranos en</p>
-          <ul class="find-us-social-media">
-            <li class="find-us-social-media__item">
-              <a class="find-us-social-media__link" href="#">
-                <svg class="find-us-social-media__icon" width="20" height="20">
-                  <use href="images/SVG/icons.svg#instagram"></use>
+          <aside class="find-us">
+            <p class="find-us__title">Encuentranos en</p>
+            <ul class="find-us-social-media">
+              <li class="find-us-social-media__item">
+                <a class="find-us-social-media__link" href="#">
+                  <svg class="find-us-social-media__icon" width="20" height="20">
+                    <use href="images/SVG/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="find-us-social-media__item">
+                <a class="find-us-social-media__link" href="">
+                  <svg class="find-us-social-media__icon" width="20" height="20">
+                    <use href="images/SVG/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="find-us-social-media__item">
+                <a class="find-us-social-media__link" href="#">
+                  <svg class="find-us-social-media__icon" width="20" height="20">
+                    <use href="images/SVG/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="find-us-social-media__item">
+                <a class="find-us-social-media__link" href="#">
+                  <svg class="find-us-social-media__icon" width="20" height="20">
+                    <use href="images/SVG/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <!-- formulario de suscripción -->
+          <aside class="subscription-form">
+            <form class="footer-form" name="newsletter_subscription" autocomplete="on" novalidate>
+                <p class="subscription-form__title">
+                  SUSCRÍBASE AL BOLETÍN INFORMATIVO
+                </p>
+                <label>
+                  <div class="container_subscription">
+                  <input required
+                    class="subscription_input"
+                    type="email"
+                    name="email"
+                    placeholder="Correo electrónico"
+                  />
+                  </div>
+                </label>
+                <div class="container-button-footer">
+                <button class="btn-subscription-footer" type="submit">Suscríbase</button>
+                <svg class="subscription_svg_send">
+                  <use href="images/SVG/icons.svg#icon-send-footer"></use>
                 </svg>
-              </a>
-            </li>
-
-            <li class="find-us-social-media__item">
-              <a class="find-us-social-media__link" href="">
-                <svg class="find-us-social-media__icon" width="20" height="20">
-                  <use href="images/SVG/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="find-us-social-media__item">
-              <a class="find-us-social-media__link" href="#">
-                <svg class="find-us-social-media__icon" width="20" height="20">
-                  <use href="images/SVG/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="find-us-social-media__item">
-              <a class="find-us-social-media__link" href="#">
-                <svg class="find-us-social-media__icon" width="20" height="20">
-                  <use href="images/SVG/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </aside>
-
-        <aside class="subscription-form">
-          <form name="newsletter_subscription" autocomplete="on" novalidate>
-              <p class="subscription-form__title">
-                SUSCRÍBASE AL BOLETÍN INFORMATIVO
-              </p>
-              <label>
-                <div class="container_subscription">
-                <input class="subscription_input"
-                  type="email"
-                  name="email"
-                  placeholder="Correo electrónico"
-                />
-                </div>
-              </label>
-              <div class="container-button-footer">
-              <button class="btn-subscription-footer" type="submit">Suscríbase</button>
-              <svg class="subscription_svg_send">
-                <use href="images/SVG/icons.svg#icon-send-footer"></use>
-              </svg>
-            </div>
-          </form>
-        </aside>
-      </div>
-    </section>
-  </footer>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
